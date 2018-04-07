@@ -1,0 +1,16 @@
+form{
+    margin: 5%;
+    margin-top: 2%;
+    background: #fff;
+    padding: 26px 32px 22px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+}
+
+.titulo-form{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.button-cadastrar{
+    margin-top: 4%;
+}
+
