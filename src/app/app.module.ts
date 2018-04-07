@@ -8,15 +8,20 @@ import { IndexComponent } from './index/index.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    IndexComponent
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
