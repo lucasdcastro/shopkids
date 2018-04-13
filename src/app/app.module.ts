@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { CarrinhoComponent } from './carrinho/carrinho.component';
 
 
 
@@ -14,7 +15,8 @@ import { UsuarioComponent } from './usuario/usuario.component';
   declarations: [
     AppComponent,
     UsuarioComponent,
-    IndexComponent
+    IndexComponent,
+    CarrinhoComponent
     
     
   ],
