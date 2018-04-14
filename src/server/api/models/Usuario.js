@@ -90,7 +90,7 @@ module.exports = {
       required: true,
       description: 'Cidade do usuário',
       example: 'Rio de Janeiro'
-    },
+    }
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗

@@ -10,7 +10,6 @@
 
 module.exports.policies = {
 
-<<<<<<< HEAD
   /***************************************************************************
   *                                                                          *
   * Default policy for all controllers and actions, unless overridden.       *
@@ -19,14 +18,5 @@ module.exports.policies = {
   ***************************************************************************/
 
   // '*': true,
-=======
-  '*': 'is-logged-in',
-
-  // Bypass the `is-logged-in` policy for:
-  'entrance/*': true,
-  'account/logout': true,
-  'view-homepage-or-redirect': true,
-  'deliver-contact-form-message': true,
->>>>>>> 6ca10183bf65bbe5ccd4481eb448f4a27e1f5743
 
 };

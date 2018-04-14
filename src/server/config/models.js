@@ -35,11 +35,7 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
 
-<<<<<<< HEAD
   // schema: true,
-=======
-  schema: true,
->>>>>>> 6ca10183bf65bbe5ccd4481eb448f4a27e1f5743
 
 
   /***************************************************************************
@@ -57,11 +53,7 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
 
-<<<<<<< HEAD
   // migrate: 'alter',
-=======
-  migrate: 'alter',
->>>>>>> 6ca10183bf65bbe5ccd4481eb448f4a27e1f5743
 
 
   /***************************************************************************
@@ -106,11 +98,7 @@ module.exports.models = {
   ******************************************************************************/
 
   dataEncryptionKeys: {
-<<<<<<< HEAD
-    default: '8D/2cDxhWpGtmlbU0jyF9OrwN8RAuhImmN1RJOirUGQ='
-=======
-    default: 'PrjixO0mHuSN8ShnYGLXUVh4zrPcrzlXDYnGEUP8MPQ='
->>>>>>> 6ca10183bf65bbe5ccd4481eb448f4a27e1f5743
+    default: '6+90OFaptbHZF6gneMUjlf/gzQW2eQzCV4wVlJjoJF8='
   },
 
 
