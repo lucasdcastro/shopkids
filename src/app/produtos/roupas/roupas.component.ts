@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import {ApiserviceService} from "../../apiservice.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-roupas',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoupasComponent implements OnInit {
 
-  constructor() { }
+  constructor(private chamadaApi : ApiserviceService,
+              private rota: Router,
+              public web : HttpClient) { }
 
   ngOnInit() {
+  }
+
+  mostrarProduto(item) {
+    console.log(event.target);
   }
 
 }

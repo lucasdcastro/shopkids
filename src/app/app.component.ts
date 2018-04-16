@@ -25,7 +25,7 @@ export class AppComponent {
 
   ngOnInit() {
     let json = this.chamadaApi.pegarUsuario();
-    this.nome = JSON.parse(json).nome;
+    this.nome = JSON.parse(json).usuarioNome;
   }
 
   conferirLogin() {

@@ -12,12 +12,15 @@
       "usuarioNumero": "46",
       "usuarioUF": "RJ",
       "usuarioCidade": "Rio de Janeiro"
-    },
+    }
+  ],
+  "produtos" : [
     {
-      "id": 2
-    },
-    {
-      "id": 3
+      "id": 1,
+      "produtoTipo": "roupa",
+      "produtoNome": "Vestido Polo",
+      "produtoPreco": "59,90",
+      "produtoDescricao": "Vestido Ralph Lauren Baby Girls Rosa"
     }
   ]
 }
