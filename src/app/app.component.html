@@ -11,7 +11,7 @@
       <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
     </form>
 
-      <div class="box login">
+      <div *ngIf="!conferirLogin()"class="box login">
         <label for="login" class="col-sm-2 col-form-label">Login: </label>
         <input type="text" [(ngModel)]="login" class="form-control" id="login">
         <label for="senha" class="col-sm-2 col-form-label">Senha: </label>
@@ -21,6 +21,10 @@
           <a class="navbar-brand" href="#">Esqueceu sua senha?</a>
           <a class="navbar-brand" href="/usuario">Não possui uma conta?</a>
         </div>
+      </div>
+      <div *ngIf="conferirLogin()"class="box login">
+        <label for="login" class="col-sm-2 col-form-label">Olá, {{nome}}</label>
+        <button type="button"  class="btn btn-secondary btn-sm">Entrar</button>
       </div>
       <!--<form class="form-inline">-->
         <!--<div class="form-group row">-->

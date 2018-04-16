@@ -9,14 +9,14 @@ import {MoveisComponent} from './produtos/moveis/moveis.component';
 import {RoupasComponent} from './produtos/roupas/roupas.component';
 
 const routes: Routes = [
-  {path:'index', component : IndexComponent},
+  {path: 'index', component : IndexComponent},
   {path: 'usuario', component : UsuarioComponent},
   {path: 'produtos', component : ProdutosComponent},
   {path: 'produtos/acessorios', component : AcessoriosComponent},
   {path: 'produtos/brinquedos', component : BrinquedosComponent},
   {path: 'produtos/moveis', component : MoveisComponent},
   {path: 'produtos/roupas', component : RoupasComponent},
-  {path:'**', component : IndexComponent}
+  {path: '**', component : IndexComponent}
 ];
 
 @NgModule({
