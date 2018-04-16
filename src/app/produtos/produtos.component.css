@@ -1,0 +1,22 @@
+.conteudo-produto{
+    margin-top:5%;
+}
+.title{
+    margin-bottom:10%;
+}
+.descricao{
+    margin-bottom:10%;
+}
+.formas-pagamento{
+    margin-bottom: 15%;
+}
+.informacoes{
+    padding-top:2%;
+    padding-left: 2%;
+    margin-bottom: 10%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+}
+.roupa{
+    margin-bottom: 10%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+}
