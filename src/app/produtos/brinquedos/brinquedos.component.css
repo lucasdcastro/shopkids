@@ -1,0 +1,17 @@
+.cabecalho-roupas{
+    padding-top: 2%;
+    padding-left: 4%;
+}
+ul{
+    list-style: none;
+}
+.lista-roupas{
+    margin-bottom: 5%;
+    margin-top:5%;
+}
+.lista-roupas p{
+    text-align: center;
+}
+.filtros{
+    margin-top: 4%;
+}

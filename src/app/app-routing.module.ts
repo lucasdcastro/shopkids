@@ -16,6 +16,7 @@ const routes: Routes = [
   {path: 'produtos/brinquedos', component : BrinquedosComponent},
   {path: 'produtos/moveis', component : MoveisComponent},
   {path: 'produtos/roupas', component : RoupasComponent},
+  {path: 'produtos', component : ProdutosComponent},
   {path: '**', component : IndexComponent}
 ];
 
