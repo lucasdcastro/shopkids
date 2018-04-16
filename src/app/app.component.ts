@@ -14,18 +14,36 @@ export class AppComponent {
   title = 'app';
   login = '';
   senha = '';
+  nome = '';
 
   constructor(private chamadaApi : ApiserviceService,
               private rota: Router,
-              public web : HttpClient) { }
+              public web : HttpClient) {
+
+
+  }
 
   ngOnInit() {
+    let json = this.chamadaApi.pegarUsuario();
+    this.nome = JSON.parse(json).nome;
   }
+
+  conferirLogin() {
+    return this.chamadaApi.verificarLogin();
+  }
+
+  buscarNome() {
+      let json = this.chamadaApi.pegarUsuario();
+      console.log(json);
+      this.nome = JSON.parse(json).usuarioNome;
+  }
+
 
   realizarLogin(email, senha) {
     this.chamadaApi.buscarUsuario(email, senha).subscribe (retornoApi => {
       console.log(retornoApi);
       this.chamadaApi.salvarUsuario(JSON.stringify(retornoApi));
+      this.rota.navigate(['/**']);
     });
   }
 

@@ -19,7 +19,23 @@ export class ApiserviceService {
   }
 
   salvarUsuario(usuario) {
-    localStorage.setItem('usuario', usuario);
+    sessionStorage.setItem('usuario', usuario);
+  }
+
+  verificarLogin() {
+    if(sessionStorage.getItem('usuario')) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  pegarUsuario() {
+    return sessionStorage.getItem('usuario');
+  }
+
+  deslogar() {
+    sessionStorage.removeItem('usuario');
   }
 
 }
