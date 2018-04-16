@@ -1,0 +1,23 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "usuarioNome": "Lucas",
+      "usuarioSobrenome": "Ferreira",
+      "usuarioEmail": "lucas@haha.com",
+      "usuarioSenha": "123",
+      "usuarioCEP": "21011200",
+      "usuarioEndereco": "Rua Marari",
+      "usuarioComplemento": "",
+      "usuarioNumero": "46",
+      "usuarioUF": "RJ",
+      "usuarioCidade": "Rio de Janeiro"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ]
+}

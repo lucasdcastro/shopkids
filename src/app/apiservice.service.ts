@@ -5,17 +5,21 @@ import {UsuarioComponent} from './usuario/usuario.component';
 @Injectable()
 export class ApiserviceService {
 
-  urlCEP: "https://viacep.com.br/ws"
+  urlUsuario: string = "http://localhost:8081/usuarios";
 
   constructor(public web : HttpClient) { }
 
-  buscarEndereco(cep) {
-    let formu=new FormData();
-    formu.append('cep', cep);
-    //formu.append('json', 'json');
-    formu.append('callback', 'meu_callback');
 
-    return this.web.post(this.urlCEP, formu);
+  buscarUsuario(email, senha) {
+    /*let formu=new FormData();
+    formu.append('usuarioEmail', email);
+    formu.append('usuarioSenha', senha);
+    console.log(senha);*/
+    return this.web.get(this.urlUsuario + '?usuarioEmail=' + email + '&usuarioSenha=' + senha);
+  }
+
+  salvarUsuario(usuario) {
+    localStorage.setItem('usuario', usuario);
   }
 
 }
