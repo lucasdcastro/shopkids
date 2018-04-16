@@ -13,10 +13,10 @@
 
       <div class="box login">
         <label for="login" class="col-sm-2 col-form-label">Login: </label>
-        <input type="text" class="form-control" id="login">
+        <input type="text" [(ngModel)]="login" class="form-control" id="login">
         <label for="senha" class="col-sm-2 col-form-label">Senha: </label>
-        <input type="text" class="form-control" id="senha">
-        <button type="button" class="btn btn-secondary btn-sm">Entrar</button>
+        <input type="text" [(ngModel)]="senha" class="form-control" id="senha">
+        <button type="button" (click)="realizarLogin(login, senha)" class="btn btn-secondary btn-sm">Entrar</button>
         <div class="box conta">
           <a class="navbar-brand" href="#">Esqueceu sua senha?</a>
           <a class="navbar-brand" href="/usuario">Não possui uma conta?</a>
@@ -57,7 +57,7 @@
       </ul>
     </div>
   </nav>
-  
+
   <div class="container">
     <router-outlet></router-outlet>
   </div>
@@ -82,5 +82,4 @@
     </ul>
 
   </footer>
-  
-  
+
